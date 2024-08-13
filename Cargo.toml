@@ -1,6 +1,13 @@
-[package]
-name = "workspace-lint-false-positive-repro"
-version = "0.1.0"
-edition = "2021"
+[workspace]
+resolver = "2"
+members = ["bin/*", "lib/*"]
+default-members = ["bin/*", "lib/*"]
 
-[dependencies]
+[workspace.package]
+authors = ["Lake Armitage <gillyobeast@gmail.com"]
+edition = "2021"
+rust-version = "1.80"
+
+[workspace.dependencies]
+wiremock = "0.5"
+

@@ -1,0 +1,6 @@
+[source.mirror]
+registry = "https://github.com/hotg-ai/crates.io-index"
+
+[source.crates-io]
+# comment out below line (stop proxying crates.io via mirror) to fix issue
+replace-with = "mirror"
